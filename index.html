@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">M<span>N</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">☀️</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+       
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I’m <span>Mukhtar Nashir</span></h1>
+                <p>Front-End Developer | Santri PP KHAS Kempek Cirebon | S1 Teknik Informatika</p>
+                <button id="viewWorkBtn" class="btn">About me</button>
+            </div>
+            <div class="hero-image">
+                <img src="D:\web_Mukhtar\images\WhatsApp_Image_2025-10-23_at_00.01.53-removebg-preview.png"
+                    alt="Web Developer" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        
+        <h2>About Me</h2>
+
+        <div class="about-container">
+            <img src="D:\web_Mukhtar\images\IMG_9403.PNG" alt="Profile Photo">
+            <div class="about-text">
+                <p>
+                    Hello!
+
+                    Latar belakang pendidikan di pesantren, khususnya di Pondok Pesantren Khas Kempek, Cirebon, telah
+                    membekali saya dengan landasan karakter, disiplin, dan integritas. Saat ini, saya berupaya
+                    menerapkan etos kesungguhan dan semangat belajar tersebut dalam proses eksplorasi dan pengembangan
+                    kompetensi di bidang teknologi dan dunia digital.
+                </p>
+                <p>
+                    Lahir di Brebes pada tanggal 22 Juni 2002, saya adalah anak pertama dari 3 bersaudara.
+                    saya memiliki minat yang besar dalam dunia teknologi dan pengembangembangan web.
+                </p>
+            </div>
+        </div>
+
+        <!-- 🔹 New Elements: Education, Career, and Skills -->
+        <div class="about-details">
+
+            <!-- Pendidikan -->
+            <div class="about-card">
+                <div class="icon">
+                    🎓
+                </div>
+                <div class="info">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>1. Lulusan SDN Prapag Lor 02</strong> –Tahun(2009–2015)</li>
+                        <li><strong>2. Lulusan MTs KHAS Kempek </strong> –Tahun(2015–2018)</li>
+                        <li><strong>3. Lulusan MA KHAS Kempek </strong> –Tahun(2018–2021)</li>
+                        <li><strong>4. S1 di STIMIK IKMI</strong> –Prodi Teknik Informatika Tahun(2022–2026)</li>
+                        <li><strong>5. Santri PP KHAS Kempek Cirebon</strong> – Tahun (2015–Sekarang)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Karier -->
+            <div class="about-card">
+                <div class="icon">
+                    💼
+                </div>
+                <div class="info">
+                    <h3>Career</h3>
+                    <ul>
+                        <li><strong>Admin Keuangan PP. KHAS Kempek</strong> – Tahun (2022–Sekarang)</li>
+                        <li><strong>Staff TU MA Khas Kempek</strong> – Tahun (2023–Sekarang)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Skill Keahlian -->
+            <div class="about-card">
+                <div class="icon">
+                    🧠
+                </div>
+                <div class="info">
+                    <h3>Skills</h3>
+                    <div class="skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Excel</span>
+                        <span>Word</span>
+                        <span>Network</span>
+                        <span>Data science</span>
+                        <span>Data Analysis</span>
+                        <span>Python</span>
+                        <span>Accounting</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== PROJECT SECTION ===== -->
+    <section id="project" class="project">
+       
+        <h2>My Projects</h2>
+        <p class="subtitle">Manage your portfolio projects dynamically below.</p>
+
+        <!-- Form untuk tambah / edit project -->
+        <div class="project-form">
+            <input type="text" id="projectTitle" placeholder="Project Title">
+            <input type="text" id="projectDesc" placeholder="Project Description">
+            <input type="text" id="projectTech" placeholder="Technologies (comma separated)">
+            <input type="text" id="projectImg" placeholder="Image URL">
+            <input type="text" id="projectLink" placeholder="Project Link">
+            <button id="addProjectBtn">Add Project</button>
+            <button id="updateProjectBtn" style="display:none;">Update Project</button>
+        </div>
+
+        <!-- Grid Project -->
+        <div class="project-grid" id="projectList">
+            <!-- Project cards akan ditampilkan di sini secara dinamis -->
+        </div>
+    </section>
+
+
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact">
+        
+        <h2>Contact & Donation</h2>
+        <p class="subtitle">Open donasi untuk peduli kemanusian dan lingkungan support via DANA 💙</p>
+        <p class="subtitle">Di jamin AMANAH !</p>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form id="contactForm" class="contact-form">
+                <h3>Telegram </h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message Telegram" required></textarea>
+                <button type="submit" id="sendBtn">Send Message</button>
+            </form>
+
+            <!-- Donation Section -->
+            <div class="donation-box">
+                <h3>Support Me 💸</h3>
+                <p>Scan QR or copy my DANA number below:</p>
+                <img src="D:\web_Mukhtar\images\qr_dana.jpeg" alt="DANA QR" class="dana-qr">
+                <p class="dana-number" id="danaNumber">085292220607</p>
+                <button id="copyDanaBtn">Copy DANA Number</button>
+            </div>
+        </div>
+    </section>
+
+ <!-- ===== FOOTER ===== -->
+<footer class="footer reveal">
+  <p>© 2025 Your Name — All Rights Reserved</p>
+  
+  <div class="social-icons">
+    <a href="https://www.instagram.com/q.mkhtrrr?igsh=ZHpkZjh5MDZ3bHR3" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com/@dpkp_mmm?_t=ZS-90nANjmAKzh&_r=1" target="_blank" aria-label="TikTok">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+    </a>
+    <a href="mukhtarnashir3@gmail.com" target="_blank" aria-label="Gmail">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+    </a>
+    <a href="https://wa.me/qr/BGJNFZLREUSPH1" target="_blank" aria-label="WhatsApp">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+    </a>
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a2e8f6b6c2.js" crossorigin="anonymous"></script>
+
+
+
+ 
+</body>
+
+</html>
